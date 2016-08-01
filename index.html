@@ -1,0 +1,42 @@
+<DOCTYPE!>
+<html>
+  <head>
+    <title>JS Betting Game</title>
+      <style>
+
+        .form-content > label,input,span{
+          display: block;
+          font-size: 18px;
+        }
+        .form-content span {
+          color: grey;
+          font-size: 10px;
+        }
+      </style>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script type="text/javascript" src="./script.js"></script>
+
+  </head>
+
+  <body>
+    <form>
+      <div class="form-content form-bet">
+        <label for="betAmount">Place a bet between $5 and $10 </label>
+        <span id="errorBet"></span>
+        <input type="text" id="betAmount"/>
+      </div>
+
+      <div class="form-content form-guess">
+        <label for="the_guess">Guess a number between 1 and 10!</label>
+        <span id="errorGuess"></span>
+        <input type="text" id="the_guess"/>
+
+      </div>
+      <button>Bet</button>
+      <button>Guess</button>
+    </form>
+
+    <h4>Result</h4>
+    <span id="result"></span>
+  </body>
+</html>
